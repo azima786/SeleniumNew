@@ -1,0 +1,4 @@
+# Created at 2022-09-13T10:52:42.393
+
+test.java.com.TestNG.day1.name3() is depending on method public void test.java.com.TestNG.day1.name4(), which is not annotated with @Test or not included.
+

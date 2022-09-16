@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="suite">
+<packages>
+<package name = "TestNG"/>
+</packages>
+    <test name="Test">
+        <classes>
+            <class name="test.java.com.TestNG.day1" >
+            <methods>
+            <exclude name = "name2"/>
+            </methods>
+            </class>
+
+            <class name="test.java.com.TestNG.day2" >
+            <methods>
+            <include name = "name.*"/> 
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
