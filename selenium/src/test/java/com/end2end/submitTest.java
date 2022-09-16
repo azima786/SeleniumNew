@@ -1,19 +1,16 @@
 package com.end2end;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import TestingComponents.BaseTest;
+import TestingComponents.Retry;
 import pageObjectModel.OrderPage;
 import pageObjectModel.ProductCatalog;
 import pageObjectModel.confirmationPage;
@@ -22,9 +19,9 @@ import pageObjectModel.paymentMethod;
 
 public class submitTest extends BaseTest{
 // String productName = "ZARA COAT 3";
-   @Test(dataProvider = "getData", groups={"Purchase"})
+   @Test(dataProvider = "getData", groups={"Purchase"}, retryAnalyzer = Retry.class)
    //public void submitOrder(String email, String password, String productName) throws IOException{
-   public void submitOrder(HashMap<String, String> input) throws IOException{
+   public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException{
      
       //LandingPage landing= launchApplication();
        
@@ -44,11 +41,12 @@ public class submitTest extends BaseTest{
 
    }
 
-   @Test(dependsOnMethods = {"submitOrder"})
+   @Test  (dependsOnMethods = {"submitOrder"}, retryAnalyzer = Retry.class)
    public void OrderHistoryTest(String email, String password, String productName){
+   //public void OrderHistoryTest(HashMap<String, String> input){
       ProductCatalog productCatalog = landing.loginApplication("ak123@gmail.com", "Abc123456$");
       OrderPage orderPage = productCatalog.goToOrderPage();
-      Assert.assertTrue(orderPage.VerifyOrderDisplay(productName));
+      Assert.assertTrue(orderPage.VerifyOrderDisplay("ZARA COAT 3"));
 
    }
 

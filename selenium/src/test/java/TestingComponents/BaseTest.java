@@ -33,14 +33,16 @@ public class BaseTest {
         Properties prop = new Properties();
         FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//Resources//GlobalData.properties");
         prop.load(fs);
-String browserName=        prop.getProperty("browser");
+String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");
+
+      //  prop.getProperty("browser");
 
 if(browserName.equalsIgnoreCase("chrome")){
      WebDriverManager.chromedriver().setup();
    driver = new ChromeDriver();
    
 }
-else if(browserName.equalsIgnoreCase("chrome")){
+else if(browserName.equalsIgnoreCase("firefox")){
     WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
  
@@ -83,9 +85,9 @@ List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeRefer
 
 return data;
    }
-//@AfterMethod(alwaysRun = true)
-//public void tearDown(){
- //   driver.close();
-//}
+@AfterMethod(alwaysRun = true)
+public void tearDown(){
+   driver.close();
+}
     }
    

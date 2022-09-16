@@ -21,8 +21,8 @@ public class confirmationPage extends abstractComponent{
 
 
 
-public String confirmOrderSubmission(){
-
+public String confirmOrderSubmission() throws InterruptedException{
+Thread.sleep(3000);
 String orderConfirmation = message.getText();
 return orderConfirmation;
 

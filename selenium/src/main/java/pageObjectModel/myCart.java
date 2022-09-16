@@ -28,11 +28,13 @@ WebDriver driver;
 @FindBy(css=".cartSection h3") List<WebElement> cartItems;
 
 
-public Boolean clickOnCart(String productName){
+public Boolean clickOnCart(String productName) throws InterruptedException{
 
 //List<WebElement> cartProducts = cartItems;
 //WebElement prod = productCatalog.getProductByName(productName);
+Thread.sleep(3000);
 Boolean match = cartItems.stream().anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+//Boolean match = cartItems.stream().anyMatch(cartProduct -> cartProduct.getText().equals(productName));
 return match;
 
 

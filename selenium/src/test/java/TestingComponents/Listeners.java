@@ -10,14 +10,16 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import Resources.ExtentReporterNG;
 
 public class Listeners extends BaseTest implements ITestListener {
-@Override
+ExtentTest test;
+    ExtentReports extent = ExtentReporterNG.getReportObject();
+ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+
     public void onTestFailure(ITestResult result) {
-        ITestListener.super.onTestFailure(result);
-        test.fail(result.getThrowable());
+       // ITestListener.super.onTestFailure(result);
+        extentTest.get().fail(result.getThrowable());
         try {
             driver=(WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
         } catch (Exception e1) {
@@ -30,21 +32,22 @@ public class Listeners extends BaseTest implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+        extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
     }
 
-ExtentTest test;
-    ExtentReports extent = ExtentReporterNG.getReportObject();
+
 @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
-test.log(Status.PASS, "Test Passed");
+        extentTest.get().log(Status.PASS, "Test Passed");
     }
 
     @Override
     public void onTestStart(ITestResult result) {
+     
        ITestListener.super.onTestStart(result);
-       extent.createTest(result.getMethod().getMethodName());
+     test =   extent.createTest(result.getMethod().getMethodName());
+     extentTest.set(test); //assign unique thread id
         
     }
 

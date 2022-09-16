@@ -24,7 +24,7 @@ public class errorValidation extends BaseTest{
    }
 
    @Test
-   public void productDisplayedVerification() throws IOException{
+   public void productDisplayedVerification() throws IOException, InterruptedException{
       String productName = "ZARA COAT 3";
       //LandingPage landing= launchApplication();
        

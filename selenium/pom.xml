@@ -91,12 +91,80 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
 </dependency>
-
-
-
-
-
   </dependencies>
+
+<profiles>
+<profile>
+<id>Regression</id>
+<build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+            <execution>
+                <phase>integration-test</phase>  
+            </execution>
+        </executions>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</profile>
+<profile>
+<id>Puchase</id>
+<build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+            <execution>
+                <phase>integration-test</phase>  
+            </execution>
+        </executions>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng2.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</profile>
+<profile>
+<id>Error Validation</id>
+<build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+            <execution>
+                <phase>integration-test</phase>  
+            </execution>
+        </executions>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng3.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</profile>
+</profiles>
+
 
   <build>
     <pluginManagement
@@ -143,8 +211,14 @@
         </plugin>
          <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M7</version>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+            <execution>
+                <!-- changed <id> to <phase>, but I don't know whether it's important or not. -->
+                <phase>integration-test</phase>
+                <!-- ... no changes here: the same as in the question ... -->
+            </execution>
+        </executions>
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng3.xml</suiteXmlFile>

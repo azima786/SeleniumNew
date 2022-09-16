@@ -1,15 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-16T11:02:44 CDT" name="suite" finished-at="2022-09-16T11:02:44 CDT" duration-ms="0">
+  <suite started-at="2022-09-16T15:50:44 CDT" name="Surefire suite" finished-at="2022-09-16T15:51:15 CDT" duration-ms="31160">
     <groups>
       <group name="Purchase">
-        <method signature="submitTest.submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@2a07b5a4]" name="submitOrder" class="com.end2end.submitTest"/>
+        <method signature="submitTest.submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@4e8d2e24]" name="submitOrder" class="com.end2end.submitTest"/>
       </group> <!-- Purchase -->
-      <group name="ErrorValidation">
-        <method signature="errorValidation.LogInPageErrorValidation()[pri:0, instance:com.end2end.errorValidation@c280ee70]" name="LogInPageErrorValidation" class="com.end2end.errorValidation"/>
-      </group> <!-- ErrorValidation -->
     </groups>
-  </suite> <!-- suite -->
+    <test started-at="2022-09-16T15:50:44 CDT" name="Surefire test" finished-at="2022-09-16T15:51:15 CDT" duration-ms="31160">
+      <class name="com.end2end.submitTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:50:44 CDT" name="launchApplication" finished-at="2022-09-16T15:50:51 CDT" duration-ms="6735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:50:51 CDT" name="submitOrder" data-provider="getData" finished-at="2022-09-16T15:51:01 CDT" duration-ms="9813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abc123456$, email=ak123@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:51:01 CDT" name="tearDown" finished-at="2022-09-16T15:51:01 CDT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:51:01 CDT" name="launchApplication" finished-at="2022-09-16T15:51:05 CDT" duration-ms="4382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:51:05 CDT" name="submitOrder" data-provider="getData" finished-at="2022-09-16T15:51:15 CDT" duration-ms="9792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, email=shetty@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:51:15 CDT" name="tearDown" finished-at="2022-09-16T15:51:15 CDT" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="OrderHistoryTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.end2end.submitTest@4e8d2e24]" started-at="2022-09-16T15:51:15 CDT" name="OrderHistoryTest" finished-at="2022-09-16T15:51:15 CDT" depends-on-methods="com.end2end.submitTest.submitOrder" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [OrderHistoryTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [OrderHistoryTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.TestRunner$$Lambda$66/0000000000000000.accept(Unknown Source)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- com.end2end.submitTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
