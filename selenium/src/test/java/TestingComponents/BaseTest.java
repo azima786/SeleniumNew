@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -85,8 +86,9 @@ List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeRefer
 
 return data;
    }
-@AfterMethod(alwaysRun = true)
+@AfterTest(alwaysRun = true)
 public void tearDown(){
+   driver.quit();
    driver.close();
 }
     }
