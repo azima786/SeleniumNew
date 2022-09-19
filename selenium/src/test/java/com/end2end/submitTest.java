@@ -18,7 +18,7 @@ import pageObjectModel.myCart;
 import pageObjectModel.paymentMethod;
 
 public class submitTest extends BaseTest{
-// String productName = "ZARA COAT 3";
+ String productName = "ZARA COAT 3";
    @Test(dataProvider = "getData", groups={"Purchase"}, retryAnalyzer = Retry.class)
    //public void submitOrder(String email, String password, String productName) throws IOException{
    public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException{
@@ -42,11 +42,11 @@ public class submitTest extends BaseTest{
    }
 
    @Test  (dependsOnMethods = {"submitOrder"}, retryAnalyzer = Retry.class)
-   public void OrderHistoryTest(String email, String password, String productName){
-   //public void OrderHistoryTest(HashMap<String, String> input){
+  // public void OrderHistoryTest(String email, String password, String productName){
+public void OrderHistoryTest() throws InterruptedException{
       ProductCatalog productCatalog = landing.loginApplication("ak123@gmail.com", "Abc123456$");
       OrderPage orderPage = productCatalog.goToOrderPage();
-      Assert.assertTrue(orderPage.VerifyOrderDisplay("ZARA COAT 3"));
+      Assert.assertTrue(orderPage.VerifyOrderDisplay(productName));
 
    }
 

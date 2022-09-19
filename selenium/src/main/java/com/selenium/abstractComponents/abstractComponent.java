@@ -21,15 +21,17 @@ this.driver = driver;
     }
 
     @FindBy(css="[routerlink*='cart']") WebElement cartHeader;
-    @FindBy(css="button[routerlink*='myorders']") WebElement orderHeader;
+    //@FindBy(css="button[routerlink*='myorders']") WebElement orderHeader;
+    @FindBy(css="button[routerlink='/dashboard/myorders']") WebElement orderHeader;
+    
 
-    public void waitForElementToAppear(By FindBy){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    public void waitForElementToAppearBy(By FindBy){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 wait.until(ExpectedConditions.visibilityOfElementLocated(FindBy));
     }
 
     public void waitForWebElementToAppear(WebElement FindBy){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 wait.until(ExpectedConditions.visibilityOf(FindBy));
     }
 
@@ -39,15 +41,17 @@ myCart cart = new myCart(driver);
 return cart;
     }
 
-    public OrderPage goToOrderPage(){
+    public OrderPage goToOrderPage() throws InterruptedException{
+        waitForWebElementToAppear(orderHeader);
         orderHeader.click();
+        Thread.sleep(3000);
         OrderPage orderPage = new OrderPage(driver);
         return orderPage;
             }
 
-    public void waitForElementToDisappear(WebElement spinner){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-wait.until(ExpectedConditions.invisibilityOf(spinner));
+    public void waitForElementToDisappear(WebElement Findby){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+wait.until(ExpectedConditions.invisibilityOf(Findby));
 
 }
 }

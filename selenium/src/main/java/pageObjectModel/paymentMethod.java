@@ -30,7 +30,7 @@ By countryResults = By.cssSelector(".ta-results");
 public void selectCountryFromDropDown(String country){
     Actions a = new Actions(driver);
 a.sendKeys(countryElement,country).build().perform();
-waitForElementToAppear(countryResults);
+waitForElementToAppearBy(countryResults);
 selectCountry.click();
 }
 

@@ -25,7 +25,7 @@ WebDriver driver;
     By toastMessage = By.cssSelector("#toast-container");
 
     public List<WebElement> getProductList(){
-        waitForElementToAppear(productsBy);
+        waitForElementToAppearBy(productsBy);
         return products;
     }
 
@@ -38,7 +38,7 @@ WebDriver driver;
     public myCart addProductToCart(String productName){
         WebElement prod = getProductByName(productName);
         prod.findElement(addToCart).click();
-        waitForElementToAppear(toastMessage);
+        waitForElementToAppearBy(toastMessage);
         waitForElementToDisappear(spin);
         myCart cart = new myCart(driver);
        return cart;
