@@ -3,14 +3,13 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.end2end.submitTest">
+      <class name="com.cucumber.TestNGTestRunner">
         <methods>
-          <include name="submitOrder"/>
-          <include name="OrderHistoryTest"/>
-          <include name="launchApplication"/>
-          <include name="tearDown"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- com.end2end.submitTest -->
+      </class> <!-- com.cucumber.TestNGTestRunner -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -97,6 +97,7 @@
   </dependencies>
 
 <profiles>
+
 <profile>
 <id>Regression</id>
 <build>
@@ -120,8 +121,28 @@
     </pluginManagement>
   </build>
 </profile>
+
 <profile>
-<id>Puchase</id>
+<id>Cucumber</id>
+<build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/TestNGTestRunner.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</profile>
+
+<profile>
+<id>Purchase</id>
 <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -143,8 +164,9 @@
     </pluginManagement>
   </build>
 </profile>
+
 <profile>
-<id>Error Validation</id>
+<id>ErrorValidation</id>
 <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -166,6 +188,7 @@
     </pluginManagement>
   </build>
 </profile>
+
 </profiles>
 
 
@@ -223,9 +246,7 @@
             </execution>
         </executions>
         <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng3.xml</suiteXmlFile>
-          </suiteXmlFiles>
+        
         </configuration>
       </plugin>
       </plugins>

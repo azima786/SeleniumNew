@@ -1,4 +1,4 @@
-package stepDefinitions;
+package com.cucumber.stepDefinitions;
 
 import java.io.IOException;
 import java.util.List;
@@ -55,5 +55,11 @@ public void message_displayed_on_ConfirmationPage(String string) throws Interrup
     String orderConfirmation =confirmPage.confirmOrderSubmission();
     Assert.assertTrue(orderConfirmation.equalsIgnoreCase(string));
 }
+
+@Then("^\"([^\"]*)\" message is displayed$")
+    public void something_message_is_displayed(String strArg1) throws Throwable {
+        Assert.assertEquals(strArg1, landing.errorMessage());
+        driver.close();
+    }
 
 }
