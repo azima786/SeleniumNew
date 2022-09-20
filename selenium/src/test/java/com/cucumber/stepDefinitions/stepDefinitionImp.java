@@ -29,18 +29,18 @@ public class stepDefinitionImp extends BaseTest {
        landing = launchApplication();
     }
 
-    @Given ("^Logged in with username (.+) and password (.+)$")
+    @Given ("Logged in with username {string} and password {password}")
     public void Logged_in_with_username_and_password(String username, String password){
        productCatalog = landing.loginApplication(username, password);
     }
 
-    @When ("^I add product (.+) from Cart$")
+    @When ("I add product {string} from Cart")
     public void I_add_product_from_Cart(String productName){
         List<WebElement> products = productCatalog.getProductList();
         productCatalog.addProductToCart(productName);
     }
 
-@And ("^checkout (.+) and submit the order$")
+@And ("checkout {string} and submit the order")
 public void checkout_submit_the_order(String productName) throws InterruptedException{
     myCart cart = productCatalog.goToCart();
     Boolean match = cart.clickOnCart(productName);

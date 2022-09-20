@@ -1,8 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.765 s <<< FAILURE! - in TestSuite
 runScenario(com.cucumber.TestNGTestRunner)  Time elapsed: 0.091 s  <<< FAILURE!
+=======
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.557 s <<< FAILURE! - in TestSuite
+runScenario(com.cucumber.TestNGTestRunner)  Time elapsed: 0.092 s  <<< FAILURE!
+>>>>>>> 876ad13 (update)
 io.cucumber.testng.UndefinedStepException: 
 The step 'I landed on Ecommerce Page' and 4 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:

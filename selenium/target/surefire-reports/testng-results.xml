@@ -2,6 +2,7 @@
 <testng-results ignored="1" total="5" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-09-19T10:44:02 CDT" name="Surefire suite" finished-at="2022-09-19T10:44:43 CDT" duration-ms="41003">
     <groups>
       <group name="Purchase">
@@ -18,6 +19,24 @@
           </reporter-output>
         </test-method> <!-- launchApplication -->
         <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@a36ebd55]" started-at="2022-09-19T10:44:09 CDT" name="submitOrder" data-provider="getData" finished-at="2022-09-19T10:44:19 CDT" duration-ms="9876" status="PASS">
+=======
+  <suite started-at="2022-09-20T08:41:56 CDT" name="Surefire suite" finished-at="2022-09-20T08:42:41 CDT" duration-ms="44718">
+    <groups>
+      <group name="Purchase">
+        <method signature="submitTest.submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@e89ea81e]" name="submitOrder" class="com.end2end.submitTest"/>
+      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestNGTestRunner@59206c3d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-09-20T08:41:56 CDT" name="Surefire test" finished-at="2022-09-20T08:42:41 CDT" duration-ms="44718">
+      <class name="com.end2end.submitTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:41:57 CDT" name="launchApplication" finished-at="2022-09-20T08:42:06 CDT" duration-ms="8416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:42:06 CDT" name="submitOrder" data-provider="getData" finished-at="2022-09-20T08:42:16 CDT" duration-ms="9955" status="PASS">
+>>>>>>> 876ad13 (update)
           <params>
             <param index="0">
               <value>
@@ -28,11 +47,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@a36ebd55]" started-at="2022-09-19T10:44:19 CDT" name="launchApplication" finished-at="2022-09-19T10:44:24 CDT" duration-ms="4626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
         <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@a36ebd55]" started-at="2022-09-19T10:44:24 CDT" name="submitOrder" data-provider="getData" finished-at="2022-09-19T10:44:34 CDT" duration-ms="9881" status="PASS">
+=======
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:42:16 CDT" name="launchApplication" finished-at="2022-09-20T08:42:21 CDT" duration-ms="5317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:42:21 CDT" name="submitOrder" data-provider="getData" finished-at="2022-09-20T08:42:31 CDT" duration-ms="10166" status="PASS">
+>>>>>>> 876ad13 (update)
           <params>
             <param index="0">
               <value>
@@ -43,6 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@a36ebd55]" started-at="2022-09-19T10:44:34 CDT" name="launchApplication" finished-at="2022-09-19T10:44:38 CDT" duration-ms="4521" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -52,23 +80,46 @@
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.end2end.submitTest@a36ebd55]" started-at="2022-09-19T10:44:42 CDT" name="tearDown" finished-at="2022-09-19T10:44:43 CDT" duration-ms="657" status="PASS">
+=======
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:42:31 CDT" name="launchApplication" finished-at="2022-09-20T08:42:36 CDT" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:42:36 CDT" name="OrderHistoryTest" finished-at="2022-09-20T08:42:40 CDT" depends-on-methods="com.end2end.submitTest.submitOrder" duration-ms="3951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.end2end.submitTest@e89ea81e]" started-at="2022-09-20T08:42:40 CDT" name="tearDown" finished-at="2022-09-20T08:42:41 CDT" duration-ms="745" status="PASS">
+>>>>>>> 876ad13 (update)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.end2end.submitTest -->
       <class name="com.cucumber.TestNGTestRunner">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.TestNGTestRunner@a869e943]" started-at="2022-09-19T10:44:02 CDT" name="setUpClass" finished-at="2022-09-19T10:44:02 CDT" duration-ms="421" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[org.testng.TestRunner@6f7ff36]]>
+=======
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.cucumber.TestNGTestRunner@59206c3d]" started-at="2022-09-20T08:41:56 CDT" name="setUpClass" finished-at="2022-09-20T08:41:57 CDT" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77107ddc]]>
+>>>>>>> 876ad13 (update)
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestNGTestRunner@a869e943]" started-at="2022-09-19T10:44:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T10:44:02 CDT" duration-ms="82" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.TestNGTestRunner@59206c3d]" started-at="2022-09-20T08:41:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T08:41:57 CDT" duration-ms="82" status="FAIL">
+>>>>>>> 876ad13 (update)
           <params>
             <param index="0">
               <value>
@@ -194,7 +245,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.TestNGTestRunner@a869e943]" started-at="2022-09-19T10:44:02 CDT" name="tearDownClass" finished-at="2022-09-19T10:44:02 CDT" duration-ms="92" status="PASS">
+=======
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.cucumber.TestNGTestRunner@59206c3d]" started-at="2022-09-20T08:41:57 CDT" name="tearDownClass" finished-at="2022-09-20T08:41:57 CDT" duration-ms="141" status="PASS">
+>>>>>>> 876ad13 (update)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

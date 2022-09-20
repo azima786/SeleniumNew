@@ -16,6 +16,14 @@ public class networkMocking {
         devTools.createSession();
 
         devTools.send(Fetch.enable(Optional.empty(), Optional.empty()));
-       
+       devTools.addListener(Fetch.requestPaused(), request->{
+if(request.getRequest().getUrl().contains("shetty")){
+String mockedURL=    request.getRequest().getUrl().replace("=shetty", "=BadGuy");
+System.out.println(mockedURL);
+
+devTools.send(Fetch.continueRequest(request.getRequestId(), mockedURL, request.getRequest().getMethod(), request.getRequest().getPostData(), request.getRequest().getHeaders(), interceptResponse));
+
+}
+       });
     }
 }
