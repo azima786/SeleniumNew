@@ -21,7 +21,7 @@ if(request.getRequest().getUrl().contains("shetty")){
 String mockedURL=    request.getRequest().getUrl().replace("=shetty", "=BadGuy");
 System.out.println(mockedURL);
 
-devTools.send(Fetch.continueRequest(request.getRequestId(), mockedURL, request.getRequest().getMethod(), request.getRequest().getPostData(), request.getRequest().getHeaders(), interceptResponse));
+devTools.send(Fetch.continueRequest(request.getRequestId(), mockedURL, request.getRequest().getMethod(), request.getRequest().getPostData(), request.getRequest().getHeaders(), Optional.empty()));
 
 }
        });
