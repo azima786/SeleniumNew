@@ -7,8 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v101.emulation.Emulation;
 
-import com.github.dockerjava.api.model.Network;
-
 public class mobileEmulator {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
@@ -18,7 +16,7 @@ public class mobileEmulator {
         DevTools devTools = driver.getDevTools();
         devTools.createSession();
 
-        // Send commands to CDP Methods-> CDP Methods will invoke and get access to Chrome DeVTools
+        // Send commands to CDP Methods-> CDP Methods will invoke and get access to Chrome DeVTools - Designed by selenium
         devTools.send(Emulation.setDeviceMetricsOverride(320, 400, 75, true, Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty()));
 
 driver.get("https://rahulshettyacademy.com/angularAppdemo/");

@@ -13,6 +13,7 @@ public class cdpCommandsTest {
                 "C:/Users/azima.keshwani/Desktop/selenium/selenium/target/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
 
+
         DevTools devTools = driver.getDevTools();
         devTools.createSession();
 
@@ -22,6 +23,7 @@ public class cdpCommandsTest {
       deviceMetrics.put("deviceScaleFactor", 50);
       deviceMetrics.put("mobile", true);
 
+      //Command name and parameters to send. Calling command
       driver.executeCdpCommand("Emulation.setDeviceMetricsOverride", deviceMetrics);
 
 driver.get("https://rahulshettyacademy.com/angularAppdemo/");
