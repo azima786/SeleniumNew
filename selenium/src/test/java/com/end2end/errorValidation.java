@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import TestingComponents.BaseTest;
+import com.TestingComponents.BaseTest;
 
 import pageObjectModel.ProductCatalog;
 import pageObjectModel.myCart;

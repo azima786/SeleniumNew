@@ -9,60 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<<<<<<< HEAD
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,003</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">44,805</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1663602242623</td><td rowspan="1">82</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.end2end.submitTest</td><td><a href="#m1">OrderHistoryTest</a></td><td rowspan="1">1663602278731</td><td rowspan="1">3796</td></tr><tr class="passedeven"><td><a href="#m2">submitOrder</a></td><td rowspan="2">1663602249825</td><td rowspan="2">9876</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td></tr></tbody>
-=======
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">44,718</td><td></td><td></td></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.end2end.submitTest</td><td><a href="#m0">OrderHistoryTest</a></td><td rowspan="1">1663954721107</td><td rowspan="1">4164</td></tr><tr class="passedeven"><td><a href="#m1">submitOrder</a></td><td rowspan="2">1663954690355</td><td rowspan="2">10319</td></tr><tr class="passedeven"><td><a href="#m2">submitOrder</a></td></tr></tbody>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1663681317429</td><td rowspan="1">82</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.end2end.submitTest</td><td><a href="#m1">OrderHistoryTest</a></td><td rowspan="1">1663681356931</td><td rowspan="1">3951</td></tr><tr class="passedeven"><td><a href="#m2">submitOrder</a></td><td rowspan="2">1663681326324</td><td rowspan="2">9955</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td></tr></tbody>
->>>>>>> 876ad13 (update)
-</table>
-<h2>Surefire test</h2><h3 id="m0">com.cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive Test of Submitting the order&quot;</td><td>&quot;Purchase the order from Ecomerce Website&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;I landed on Ecommerce Page&apos; and 4 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;I landed on Ecommerce Page&quot;)
-public void i_landed_on_ecommerce_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given(&quot;Logged in with username ak123@gmail.com and password Abc123456$&quot;)
-public void logged_in_with_username_ak123_gmail_com_and_password_abc123456$() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I add product ZARA COAT {int} from Cart&quot;)
-public void i_add_product_zara_coat_from_cart(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;checkout ZARA COAT {int} and submit the order&quot;)
-public void checkout_zara_coat_and_submit_the_order(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;{string} message is displayed on ConfirmationPage&quot;)
-public void message_is_displayed_on_confirmation_page(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver$$Lambda$325/0000000000000000.apply(Unknown Source)
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.testng.TestNGCucumberRunner$$Lambda$274/0000000000000000.accept(Unknown Source)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.CucumberExecutionContext$$Lambda$275/0000000000000000.run(Unknown Source)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.end2end.submitTest#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.end2end.submitTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Abc123456$, email=ak123@gmail.com, productName=ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.end2end.submitTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, email=shetty@gmail.com, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.end2end.submitTest#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.end2end.submitTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Abc123456$, email=ak123@gmail.com, productName=ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.end2end.submitTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Iamking@000, email=shetty@gmail.com, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

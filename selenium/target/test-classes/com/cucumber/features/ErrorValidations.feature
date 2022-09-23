@@ -1,7 +1,7 @@
 @tag
 Feature: Error Validation
 
-    @tag2
+    @Regression
     Scenario Outline: Positive Test of Submitting the order
         Given I landed on Ecomerce page
         When Logged in with username <name> and password <password>

@@ -1,4 +1,4 @@
-package TestingComponents;
+package com.TestingComponents;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -96,7 +96,7 @@ return data;
    }
 @AfterTest(alwaysRun = true)
 public void tearDown(){
-   driver.quit();
+   driver.close();
 }
     }
    

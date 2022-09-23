@@ -9,8 +9,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import TestingComponents.BaseTest;
-import TestingComponents.Retry;
+import com.TestingComponents.BaseTest;
+import com.TestingComponents.Retry;
+
 import pageObjectModel.OrderPage;
 import pageObjectModel.ProductCatalog;
 import pageObjectModel.confirmationPage;

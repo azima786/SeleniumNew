@@ -3,12 +3,10 @@ package com.end2end;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.TestingComponents.BaseTest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
-
-import TestingComponents.BaseTest;
 
 public class extendreport extends BaseTest{
     ExtentReports extent;
@@ -38,8 +36,6 @@ public void config(){
         System.out.println( driver.getTitle());
         driver.close();
         test.fail("Results do not match");
-
-       extent.flush();
-
+extent.flush();
     }
 }

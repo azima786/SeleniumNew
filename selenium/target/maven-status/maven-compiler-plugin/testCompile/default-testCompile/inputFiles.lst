@@ -1,12 +1,5 @@
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\TestingComponents\Retry.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\seleniumLatest\networkMocking.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\dynamicdropdown.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\cucumber\stepDefinitions\stepDefinitionImp.java
-<<<<<<< HEAD
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\data\dataReader.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\brokenLinks.java
-=======
->>>>>>> 876ad13 (update)
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\calendar2.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\e2e.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\checkbox.java
@@ -20,16 +13,17 @@ C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\scr
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\login.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\autoSuggestiveDropdown.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\seleniumLatest\setGeoLocation.java
+C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\TestingComponents\BaseTest.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\end2end\submitTest.java
+C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\cucumber\runner\TestNGTestRunner.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\test.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\end2end\extendreport.java
+C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\TestingComponents\HashMap.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\dropdown.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\TestingComponents\Listeners.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\TestNG\day1.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\TestNG\listeners.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\frames.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignmentcheckbox.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\cucumber\TestNGTestRunner.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\disabled.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\filterusingstream.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignment6.java
@@ -42,24 +36,16 @@ C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\bro
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\locators.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\lotsOfElements.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\LiveDemo.java
+C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\cucumber\steps\stepDefinition.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignment8.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\scope.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\TestingComponents\HashMap.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\end2end\errorValidation.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\WindowActivities.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\TestingComponents\BaseTest.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\newWindow.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignment7.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\alert.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignment4.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignment2.java
+C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\TestingComponents\Listeners.java
+C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\TestingComponents\Retry.java
 C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\calendar.java
-<<<<<<< HEAD
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\frames.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignmentcheckbox.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\cucumber\TestNGTestRunner.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\disabled.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\filterusingstream.java
-C:\Users\azima.keshwani\Desktop\selenium\selenium\src\test\java\com\selenium\assignment6.java
-=======
->>>>>>> 876ad13 (update)

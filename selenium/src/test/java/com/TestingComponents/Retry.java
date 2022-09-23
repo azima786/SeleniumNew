@@ -1,4 +1,4 @@
-package TestingComponents;
+package com.TestingComponents;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

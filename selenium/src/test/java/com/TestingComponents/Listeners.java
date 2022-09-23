@@ -1,4 +1,4 @@
-package TestingComponents;
+package com.TestingComponents;
 
 import java.io.IOException;
 

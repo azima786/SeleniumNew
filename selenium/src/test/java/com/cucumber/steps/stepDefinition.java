@@ -1,4 +1,4 @@
-package com.cucumber.stepDefinitions;
+package com.cucumber.steps;
 
 import java.io.IOException;
 import java.util.List;
@@ -6,7 +6,8 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import TestingComponents.BaseTest;
+import com.TestingComponents.BaseTest;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,13 +18,15 @@ import pageObjectModel.confirmationPage;
 import pageObjectModel.myCart;
 import pageObjectModel.paymentMethod;
 
-public class stepDefinitionImp extends BaseTest {
+public class stepDefinition extends BaseTest {
 
     public ProductCatalog productCatalog;
     public LandingPage landing;
     public myCart cart;
     public paymentMethod payment;
     public confirmationPage confirmPage;
+    
+    
     @Given("I landed on Ecommerce Page")
     public void I_landed_on_Ecommerce_Page() throws IOException{
        landing = launchApplication();
