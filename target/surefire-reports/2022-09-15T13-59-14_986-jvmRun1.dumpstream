@@ -1,3 +1,0 @@
-# Created at 2022-09-15T13:59:16.043
-org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 55; Attribute "parallel" was already specified for element "suite".
-

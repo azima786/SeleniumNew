@@ -141,7 +141,7 @@
         <artifactId>maven-failsafe-plugin</artifactId>
         <configuration>
           <includes>
-            <include>**/runner/TestNGTestRunner.java</include>
+            <include>**/TestNGTestRunner.java</include>
           </includes>
         </configuration>
       </plugin>
