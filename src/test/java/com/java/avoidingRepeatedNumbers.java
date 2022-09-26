@@ -2,21 +2,52 @@ package com.java;
 
 import java.util.ArrayList;
 
-import org.bouncycastle.util.Integers;
-
 public class avoidingRepeatedNumbers {
     public static void main(String[] args) {
-        
-        int temp;
-        int c[];
-        int[] a = {4,5,5,5,4,6,6,9,4};
-        ArrayList<Integers>ab = new ArrayList<Integers>();
-        for(int i = 0; i<a.length; i++){
-            if(!ab.contains(a[i])){
-                ab.add(a[i]);
 
-                
+        int a[] = { 4, 5, 5, 5, 4, 6, 6, 9, 4, 9, 9, 8 }; 
+        
+        // Print unique number from the list- Amazon 
+        //print the string in reverse
+
+    //     ArrayList<Integer> ab = new ArrayList<Integer>();
+    //     for (int i = 0; i < a.length; i++) {
+    //         int k = 0;
+    //         if (!ab.contains(a[i])) {
+    //             ab.add(a[i]);
+    //             k++;
+    //             for (int j = i + 1; j < a.length; j++) {
+    //                 if (a[i] == a[j]) {
+    //                     k++;
+    //                 }
+    //             }
+    //             System.out.println( "ArrayList " + a[i]+ " How many repeating number " + k);
+          
+    //             if (k == 1)
+    //                 System.out.println(a[i] + " is unique number");
+    //         }
+    //     }
+    // }
+
+    ArrayList<Integer> ab = new ArrayList<>();
+
+ 
+    for(int i = 0; i<a.length; i++){  
+         int k=0;
+        if(!ab.contains(a[i])){
+            ab.add(a[i]);
+            k++;
+
+            for(int j=i+1; j<a.length; j++){
+                if(a[i]==a[j]){
+                    k++;
+
+                  
+                }
             }
-        }
-    }
-}
+  System.out.println(a[i]+ " repeated "+ k);
+                   
+            if(k==1){
+                System.out.println("Not repeating number "+ a[i]);
+            }
+        }}}}

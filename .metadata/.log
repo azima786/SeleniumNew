@@ -1922,3 +1922,174 @@ java.nio.file.AccessDeniedException: C:\Users\azima.keshwani\git\SeleniumEclipse
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 15:09:59.946
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 15:10:01.713
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2022-09-26 15:13:18.114
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2022-09-26 15:13:18.114
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2022-09-26 15:13:18.114
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2022-09-26 15:13:18.114
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.114
+!MESSAGE Software being installed: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.114
+!MESSAGE Software currently installed: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.114
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.114
+!MESSAGE Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.jar 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.114
+!MESSAGE Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.jar 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.114
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.114
+!MESSAGE From: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.114
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.group [6.3.0,6.4.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.115
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.115
+!MESSAGE From: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.115
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.1.0.202203080745-r,6.1.0.202203080745-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.115
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.115
+!MESSAGE From: Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.115
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.3.0.202209071007-r,6.3.0.202209071007-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2022-09-26 15:13:18.123
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2022-09-26 15:13:18.123
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2022-09-26 15:13:18.123
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2022-09-26 15:13:18.123
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE Software being installed: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE Software currently installed: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.123
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.jar 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.jar 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.123
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE From: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.group [6.3.0,6.4.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.123
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE From: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.1.0.202203080745-r,6.1.0.202203080745-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.123
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE From: Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.123
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.3.0.202209071007-r,6.3.0.202209071007-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2022-09-26 15:13:18.133
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2022-09-26 15:13:18.134
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2022-09-26 15:13:18.134
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2022-09-26 15:13:18.134
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE Software being installed: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE Software currently installed: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.134
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.jar 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.jar 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.134
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE From: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.group [6.3.0,6.4.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.134
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE From: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.1.0.202203080745-r,6.1.0.202203080745-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.134
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE From: Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.134
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.3.0.202209071007-r,6.3.0.202209071007-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2022-09-26 15:13:18.135
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2022-09-26 15:13:18.135
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2022-09-26 15:13:18.135
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2022-09-26 15:13:18.135
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE Software being installed: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE Software currently installed: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.135
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.jar 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.jar 6.3.0.202209071007-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.135
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE From: Git integration for Eclipse 6.3.0.202209071007-r (org.eclipse.egit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.group [6.3.0,6.4.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.135
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE From: Java implementation of Git 6.1.0.202203080745-r (org.eclipse.jgit.feature.group 6.1.0.202203080745-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.1.0.202203080745-r,6.1.0.202203080745-r]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2022-09-26 15:13:18.135
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE From: Java implementation of Git 6.3.0.202209071007-r (org.eclipse.jgit.feature.group 6.3.0.202209071007-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2022-09-26 15:13:18.135
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.jgit.feature.jar [6.3.0.202209071007-r,6.3.0.202209071007-r]
+
+!ENTRY org.eclipse.egit.core 4 0 2022-09-26 15:32:23.010
+!MESSAGE An exception occurred during push on URI https://github.com/azima786/SeleniumNew.git: https://github.com/azima786/SeleniumNew.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/azima786/SeleniumNew.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1385)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:254)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-09-26 15:32:23.011
+!MESSAGE Can't connect to any repository: https://github.com/azima786/SeleniumNew.git (https://github.com/azima786/SeleniumNew.git: not authorized)
