@@ -94,6 +94,8 @@ List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeRefer
 
 return data;
    }
+
+   
 @AfterTest(alwaysRun = true)
 public void tearDown(){
    driver.close();
